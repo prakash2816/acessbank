@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Axis Bank - Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">AXIS BANK</div>
+    <div class="top-right">
+      <a href="#">Axis Group</a>
+      <a href="#">About Us</a>
+      <a href="#">Customer Care</a>
+      <a href="#">Find ATM/Branch</a>
+      <a href="#">English</a>
+      <button class="mobile-btn">Mobile Banking</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="left">
+      <div class="card">
+        <div class="tab">
+          <button class="active">Login ID / Customer ID</button>
+          <button>Debit Card No.</button>
+        </div>
+
+        <h3>Login using</h3>
+
+        <div class="form">
+          <label>Login ID / Customer ID</label>
+          <input id="email" type="text" placeholder="Enter ID">
+
+          <a class="link">Forgot customer ID</a>
+          <a class="link">Enable login ID</a>
+
+          <label>Password</label>
+          <input id="password" type="password" placeholder="Enter Password">
+
+          <a class="link">Forgot password</a>
+
+          <label>Login directly to</label>
+          <select>
+            <option>Dashboard</option>
+            <option>Account</option>
+            <option>Payments</option>
+          </select>
+
+          <!-- LOGIN & REGISTER BUTTONS -->
+          <button class="login-btn" onclick="submit('login')">Login</button>
+          <button class="login-btn register" onclick="submit('signup')">Register</button>
+
+          <p id="msg" style="color: red; margin-top: 10px;"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="right">
+      <div class="welcome">
+        <h1>Welcome to Axis Bank</h1>
+        <h2>Internet Banking</h2>
+        <div class="help">
+          <button>Need Help?</button>
+          <button>Watch Demo</button>
+          <button>FAQs</button>
+        </div>
+      </div>
+
+      <div class="image-box">
+        <img src="https://i.imgur.com/3Q6D6QF.png" alt="Woman with laptop">
+        <div class="qr">
+          <img src="https://i.imgur.com/2gQ9nV4.png" alt="QR Code">
+          <p>Scan to download <br> open by Axis Bank app</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
