@@ -20,3 +20,4 @@ async function submit(type) {
     document.getElementById("msg").innerText = "Error. Check console.";
   }
 }
+
